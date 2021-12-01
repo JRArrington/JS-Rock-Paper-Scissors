@@ -21,6 +21,10 @@ function playRound(playerSelection, computerSelection) {
   if (playerSelection === 'rock') {
     if (computerSelection === 'rock') {
       console.log(`Draw! You both played ${playerSelection}`);
+    } else if (computerSelection === 'paper') {
+      console.log(`You Lose! ${computerSelection} beats ${playerSelection}`);
+    } else {
+      console.log(`You Win!!! ${playerSelection} beats ${computerSelection}`);
     }
   }
 }
