@@ -26,6 +26,22 @@ function playRound(playerSelection, computerSelection) {
     } else {
       console.log(`You Win!!! ${playerSelection} beats ${computerSelection}`);
     }
+  } else if (playerSelection === 'paper') {
+    if (computerSelection === 'rock') {
+      console.log(`You Win!!! ${playerSelection} beats ${computerSelection}`);
+    } else if (computerSelection === 'paper') {
+      console.log(`Draw! You both played ${playerSelection}`);
+    } else {
+      console.log(`You Lose! ${computerSelection} beats ${playerSelection}`);
+    }
+  } else if (playerSelection === 'scissors') {
+    if (computerSelection === 'rock') {
+      console.log(`You Lose! ${computerSelection} beats ${playerSelection}`);
+    } else if (computerSelection === 'paper') {
+      console.log(`You Win!!! ${playerSelection} beats ${computerSelection}`);
+    } else {
+      console.log(`Draw! You both played ${playerSelection}`);
+    }
   }
 }
 
